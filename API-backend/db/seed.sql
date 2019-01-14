@@ -1,20 +1,29 @@
-DROP DATABASE IF EXISTS school_db_db;
-CREATE DATABASE school_db_db;
-\c school_db_db
+DROP DATABASE IF EXISTS school_db;
+CREATE DATABASE school_db;
+\c school_db
 
 
-CREATE TABLE schools (
-   id serial primary key,
-   title varchar, 
-   address varchar
-
-);
 
 CREATE TABLE bakery (
    id serial primary key,
    title varchar, 
    address varchar,
+   building_number varchar,
+   city varchar,
+   email varchar,
+   phone varchar,
    img varchar
+);
+
+CREATE TABLE schools (
+   id serial primary key,
+   title varchar, 
+   address varchar,
+   building_number varchar,
+   city varchar,
+   email varchar,
+   phone varchar
+
 );
 
 CREATE TABLE subscription (
