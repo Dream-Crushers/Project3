@@ -14,12 +14,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.get('/', (req, res) => {
-  res.send('Colors !');
+  res.send('hello !');
 })
 
 //Controller
-// const colorsController = require('./controllers/colorsController');
-// app.use('/colors', colorsController)
+const schoolController = require('./controllers/schoolsController');
+ app.use('/schools', schoolController)
 
 app.listen(port, () => {
   console.log('---------------------------------------');

@@ -21,14 +21,13 @@ CREATE TABLE schools (
    address varchar,
    building_number varchar,
    city varchar,
-   email varchar,
    phone varchar
 
 );
 
 CREATE TABLE subscription (
    id serial primary key,
-   name varchar, 
+   name varchar
 -- foreign
 );
 
@@ -37,7 +36,7 @@ CREATE TABLE subscription (
 CREATE TABLE meals (
    id serial primary key,
    name varchar, 
-   description varchar
+   description varchar,
    img varchar 
 );
 
@@ -59,7 +58,7 @@ CREATE TABLE workout (
   name varchar, 
   description varchar,
   calories_burned int,
-  minutes int,
+  minutes int
 );
 
 
