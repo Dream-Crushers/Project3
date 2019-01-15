@@ -1,5 +1,6 @@
 const express = require('express');
-const port = 3000;
+const port = 3001;
+
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
@@ -14,10 +15,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 
 app.get('/', (req, res) => {
-  res.send('hello !');
+
+  res.send('Bakery API!');
 })
 
+
 //Controller
+
+const bakeryController = require('./controllers/bakeryController');
+app.use('/bakery', bakeryController)
 
 const productsController = require('./controllers/productsController');
 app.use('/products', productsController)
