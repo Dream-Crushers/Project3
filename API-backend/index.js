@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
 })
 
 //Controller
-// const colorsController = require('./controllers/colorsController');
-// app.use('/colors', colorsController)
+const productsController = require('./controllers/productsController');
+app.use('/products', productsController)
 
 app.listen(port, () => {
   console.log('---------------------------------------');
