@@ -1,10 +1,7 @@
 # Express TV API
 
-![](https://media.giphy.com/media/Sb7WSbjHFNIL6/giphy.gif)
 
-Lets take a step back and review express. We are going to make an API to create, view, update and delete TV Shows! 
 
-Try to complete the API without copying and pasting from previous work. Use them as a reference, but type it all out yourself.
 
 ## App Structure
 
